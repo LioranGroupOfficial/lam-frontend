@@ -1,26 +1,75 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5efe2;
+  --foreground: #1c160f;
+  --surface: rgba(255, 252, 246, 0.75);
+  --surface-strong: rgba(255, 250, 242, 0.92);
+  --muted: #6d5a45;
+  --border: rgba(71, 52, 28, 0.12);
+  --accent: #0f766e;
+  --accent-strong: #0b4f4a;
+  --spotlight: rgba(15, 118, 110, 0.18);
+  --card-shadow: 0 24px 80px rgba(70, 45, 18, 0.08);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-spotlight: var(--spotlight);
+  --font-sans: "Segoe UI Variable", "Aptos", "Trebuchet MS", sans-serif;
+  --font-mono: "Consolas", "SFMono-Regular", "Liberation Mono", monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: #0d1416;
+  --foreground: #eff7f5;
+  --surface: rgba(13, 30, 31, 0.72);
+  --surface-strong: rgba(12, 27, 28, 0.9);
+  --muted: #9db5b1;
+  --border: rgba(179, 231, 224, 0.12);
+  --accent: #59d4c5;
+  --accent-strong: #9cf1e2;
+  --spotlight: rgba(89, 212, 197, 0.12);
+  --card-shadow: 0 28px 90px rgba(0, 0, 0, 0.28);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  transition:
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at top left, var(--spotlight), transparent 30%),
+    radial-gradient(circle at 85% 15%, rgba(196, 143, 61, 0.12), transparent 24%),
+    linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.04));
+  z-index: -1;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 28%, transparent);
+  color: var(--foreground);
 }
