@@ -1,0 +1,12 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="48" fill="#C48F3D"/>
+  <rect x="122" y="126" width="956" height="548" rx="44" fill="#FFF8EE" fill-opacity="0.92"/>
+  <path d="M242 521L404 389L519 446L696 271L860 351L971 228" stroke="#0F766E" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="242" cy="521" r="22" fill="#0F766E"/>
+  <circle cx="404" cy="389" r="22" fill="#0F766E"/>
+  <circle cx="519" cy="446" r="22" fill="#0F766E"/>
+  <circle cx="696" cy="271" r="22" fill="#0F766E"/>
+  <circle cx="860" cy="351" r="22" fill="#0F766E"/>
+  <circle cx="971" cy="228" r="22" fill="#0F766E"/>
+  <text x="122" y="742" fill="#FFF8EE" font-family="Segoe UI, sans-serif" font-size="72" font-weight="700">FinPilot Exchange</text>
+</svg>

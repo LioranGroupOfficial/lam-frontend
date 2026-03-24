@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Show, SignInButton, UserButton } from "@clerk/nextjs";
 
 type NavbarProps = {
@@ -53,6 +54,18 @@ export function Navbar({ currentTheme, onToggleTheme }: NavbarProps) {
           >
             Pricing
           </a>
+          <Link
+            href="/api"
+            className="hidden rounded-full px-4 py-2 text-sm text-muted transition hover:text-foreground sm:inline-flex"
+          >
+            APIs
+          </Link>
+          <Link
+            href="/search"
+            className="hidden rounded-full px-4 py-2 text-sm text-muted transition hover:text-foreground sm:inline-flex"
+          >
+            Search
+          </Link>
           <button
             type="button"
             onClick={onToggleTheme}

@@ -1,0 +1,10 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="48" fill="#0F766E"/>
+  <circle cx="242" cy="181" r="118" fill="#8AE6D9"/>
+  <circle cx="824" cy="204" r="167" fill="#0B4F4A"/>
+  <path d="M256 475C256 414.249 305.249 365 366 365H692C752.751 365 802 414.249 802 475V475C802 535.751 752.751 585 692 585H366C305.249 585 256 535.751 256 475V475Z" fill="#F5EFE2" fill-opacity="0.9"/>
+  <path d="M401 606L363 676" stroke="#D9FFFA" stroke-width="28" stroke-linecap="round"/>
+  <path d="M523 606L485 676" stroke="#D9FFFA" stroke-width="28" stroke-linecap="round"/>
+  <path d="M645 606L607 676" stroke="#D9FFFA" stroke-width="28" stroke-linecap="round"/>
+  <text x="88" y="724" fill="#D9FFFA" font-family="Segoe UI, sans-serif" font-size="72" font-weight="700">WeatherStack Pro</text>
+</svg>

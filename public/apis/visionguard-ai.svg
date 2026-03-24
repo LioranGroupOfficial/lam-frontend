@@ -1,0 +1,11 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="48" fill="#111827"/>
+  <rect x="112" y="124" width="976" height="552" rx="40" fill="#1F2937"/>
+  <circle cx="407" cy="400" r="164" fill="#59D4C5" fill-opacity="0.18"/>
+  <circle cx="407" cy="400" r="84" fill="#59D4C5"/>
+  <circle cx="407" cy="400" r="24" fill="#0F172A"/>
+  <path d="M734 267H953" stroke="#9CF1E2" stroke-width="28" stroke-linecap="round"/>
+  <path d="M734 365H1012" stroke="#9CF1E2" stroke-width="28" stroke-linecap="round"/>
+  <path d="M734 463H910" stroke="#9CF1E2" stroke-width="28" stroke-linecap="round"/>
+  <text x="112" y="742" fill="#E5FFFB" font-family="Segoe UI, sans-serif" font-size="72" font-weight="700">VisionGuard AI</text>
+</svg>
