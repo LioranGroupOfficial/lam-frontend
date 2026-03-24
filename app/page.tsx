@@ -1,8 +1,11 @@
 "use client";
 
+import { SignIn, SignInButton, UserButton } from "@clerk/nextjs";
+import SyncUser from "./components/sync-user";
+
 const platformStats = [
   { value: "5 min", label: "SDK integration time" },
-  { value: "₹0", label: "Early provider commission" },
+  { value: "2.5%", label: "Early provider commission" },
   { value: "12h", label: "Free API verification" },
   { value: "78h", label: "Paid API production review" },
 ];
@@ -66,6 +69,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen overflow-hidden">
+      <SyncUser />
       <section className="mx-auto flex w-full max-w-7xl flex-col px-6 pb-16 pt-6 sm:px-8 lg:px-10">
         <header className="sticky top-4 z-20 mb-10">
           <div className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-border bg-surface/80 px-4 py-3 shadow-[var(--card-shadow)] backdrop-blur-xl">
@@ -96,6 +100,8 @@ export default function Home() {
               >
                 <span>Toggle theme</span>
               </button>
+              <SignInButton></SignInButton>
+              <UserButton></UserButton>
             </div>
           </div>
         </header>
